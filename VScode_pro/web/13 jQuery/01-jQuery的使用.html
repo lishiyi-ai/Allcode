@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- 1 导入jQuery文件 -->
+    <script src="./js/jQuery/jquery-1.12.4.min.js"></script>
+
+    <!-- 2 入口函数 -->
+    <script>
+        // 原生的js
+        // window.onload = function(){
+        //     var oDiv = document.getElementById("mydiv");
+        //     alert(oDiv);
+        // }
+
+        // jQuery的获取标签的方式
+        // $(document).ready(function(){
+        //     // jQuery获取标签的方式和css中是一样的
+        //     var $mydiv = $("#mydiv");
+        //     alert($mydiv);
+        // })
+        // 简化方式
+        $(function(){
+             // jQuery获取标签的方式和css中是一样的
+            var $mydiv = $("#mydiv");
+            alert($mydiv);
+        })
+    </script> 
+</head>
+<body>
+    <div id="mydiv">itcast</div>
+</body>
+</html>

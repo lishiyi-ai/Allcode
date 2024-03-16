@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 
+        
+        
+        
+        
+        
+    -->
+    <script src="./js/jQuery/jquery-1.12.4.min.js"></script>
+
+    <script>
+        // ready() DOM加载完成 
+        // $(document).ready(function(){
+        //     alert("1");
+        // });
+
+        $(function(){
+            // 获取标签对象
+            // var $mytext = $("#text1");
+            // var $mybtn = $("#btn1");
+            // click() 鼠标单击
+            // $mybtn.click(function(){
+            //     alert("itcast");
+            // });
+
+            // focus() 元素获得焦点
+            // $mytext.focus(function(){
+            //     // 原生js写法
+            //     // this.style.background = "red";
+            //     // jQuery写法
+            //     $(this).css({"background":"red"});
+            // });
+
+            // blur() 元素失去焦点
+            // $mytext.blur(function(){
+            //     // jQuery写法
+            //     $(this).css({"background":"white"});
+            // });
+
+            // mouseover() 鼠标进入（进入子元素也触发）
+            var $mydiv = $("div");
+            $mydiv.mouseover(function(){
+                $(this).css({"background":"red"});
+            });
+            // mouseout() 鼠标离开（离开子元素也触发）
+            $mydiv.mouseout(function(){
+                $(this).css({"background":"white"});
+            });
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <input type="text" id="text1">
+        <input type="button" value="按钮" id="btn1">
+    </div>
+</body>
+</html>

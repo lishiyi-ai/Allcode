@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>    
+    <!-- 
+        姓名 type="text"     定义单行文本输入框
+        密码 type="password" 定义密码输入框
+        性别 type="radio"    定义单选框
+        爱好 type="checkbox" 定义复选框
+        照片 type="file"     定义上传文件
+        个人描述    <textarea></textarea> 定义多行文本输入框
+        地址 <select></select> 定义下拉列表
+        提交 type="submit"   定义提交按钮
+        重置 type="reset"    定义重置按钮
+        按钮 type="button"   定义一个普通按钮
+    -->
+    <form action="https://www.baidu.com" method="POST">
+
+        <label>姓名:</label>
+        <input type="text" name="username" >
+        <br>
+
+        <label>密码:</label>
+        <input type="password" name="password">
+        <br>
+
+        <label>性别:</label>
+        <input type="radio" name="sex" value="1">男
+        <input type="radio" name="sex" value="0">女
+        <br>
+
+        <label>爱好:</label>
+        <input type="checkbox" name="like" value="睡觉">睡觉
+        <input type="checkbox" name="like" value="吃饭">吃饭
+        <input type="checkbox" name="like" value="打豆豆">打豆豆
+        <br>
+
+        <label>照片:</label>
+        <input type="file" name="pic">
+        <br>
+
+        <label>个人描述:</label>
+        <textarea name="desc"></textarea>
+        <br>
+
+        <label>地址:</label>
+        <select name="addr">
+            <option value="1">北京</option>
+            <option value="2">上海</option>
+            <option value="3">广州</option>
+            <option value="4">深圳</option>
+        </select>
+        <br>
+
+        <input type="submit" value="提交">
+        <input type="reset" value="重置">
+        <input type="button" value="按钮">
+    </form>
+</body>
+</html>

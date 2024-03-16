@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 
+        事件代理
+        delegate(childSelector,event,function)
+
+        childSelector: 子元素的选择器
+        event: 事件名称
+        function: 当事件触发执行的函数 
+    -->
+    <script src="./js/jQuery/jquery-1.12.4.min.js"></script>
+
+    <script>
+        $(function(){
+            // 没有事件代理的写法
+            // 获取所有的<li>标签对象
+            // var $mylist = $("ul li");
+            // alert($mylist.length);
+            // 绑定5次事件
+            // $mylist.click(function(){
+            //     $(this).css({"background":"red"});
+            // });
+
+            // 获取父标签对象
+            var $mylist = $("ul");
+            // alert($mylist.length);
+            // 事件代理
+            $mylist.delegate("li","click",function(){
+                // this指的是触发事件的子标签
+                $(this).css({"background":"red"});
+            });
+        });
+    </script>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+</html>

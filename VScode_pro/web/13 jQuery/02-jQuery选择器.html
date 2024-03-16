@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- <style>
+        p{
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+    </style> -->
+    <script src="./js/jQuery/jquery-1.12.4.min.js"></script>
+    <script>
+        // ①标签选择器是根据标签名来选择标签
+        // $(function(){
+        //     var $myp = $("p");
+        //     alert($myp.length);
+        // })
+
+        // ②类选择器是根据类名来选择标签
+        // $(function(){
+        //     var $myp = $(".mydiv");
+        //     alert($myp.length);
+        // })
+
+        // ③id选择器是根据id来选择标签
+        // $(function(){
+        //     var $myp = $("#mydiv");
+        //     alert($myp.length);
+        // })
+
+        // ④层级选择器是根据层级关系来选择标签
+        // $(function(){
+        //     var $myp = $("div div p");
+        //     alert($myp.length);
+        // })
+
+        // ⑤属性选择器是根据属性名来选择标签 
+        $(function(){
+            var $myp = $("input[type=button]");
+            alert($myp.length);
+        })
+    </script>
+</head>
+<body> 
+    <p>itcast</p>  
+    <p>itcast</p> 
+
+    <!-- <div class="mydiv">itcast</div> -->
+
+    <div id="mydiv">itcast</div>
+
+    <div>
+        <div>
+            <p>itcast</p>
+        </div>
+    </div>
+
+    <div>
+            <div>
+                <p>itcast</p>
+            </div>
+    </div>
+
+    <input type="button">
+    <input type="button">
+    <input type="text" value="">
+
+</body>
+</html>

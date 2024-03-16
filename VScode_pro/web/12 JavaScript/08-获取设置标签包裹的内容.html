@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+        // 等待我们的页面数据加载完毕触发onload事件
+        window.onload = function(){
+            var oDiv = document.getElementById("mydiv");
+            // 获取标签中的内容
+            alert(oDiv.innerHTML);
+            // 修改标签中的内容
+            oDiv.innerHTML = "你好阳光";
+        }
+    </script>
+
+</head>
+<body>
+    <div id="mydiv">我是一个标签</div>
+</body>
+</html>

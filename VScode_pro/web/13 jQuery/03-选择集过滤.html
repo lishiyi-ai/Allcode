@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="./js/jQuery/jquery-1.12.4.min.js"></script>
+
+    <script>
+        $(function(){
+            // 获取到标签对象
+            var $mybtn = $("div");
+            // 进行样式修改
+            $mybtn.css({"height":"100px"});
+            // has方法
+            $mybtn.has("#btn").css({background});
+        })
+    </script>
+
+</head>
+<body>
+    <div>
+        <input type="button" value="itcast" id="btn">
+    </div>
+
+    <div>
+        <input type="button" value="heima" class="btn">
+    </div>
+</body>
+</html>

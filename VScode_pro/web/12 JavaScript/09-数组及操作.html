@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+        // 1 定义数据的两种方式
+        // var aArray = new Array(1, 2, 3);
+        // console.log(aArray);
+
+        // var aArray = [11, 22, 33]
+        // console.log(aArray);
+
+        // 2 多维数组
+        // var aArray = [[1,2,3],[11,22,33]]
+        // console.log(aArray);
+
+        // 3 根据下标获取值(js不支持负数下标)
+        // alert(aArray[0][0]);
+
+        // 4 根据下标修改值
+        // aArray[0][0] = 100;
+        // console.log(aArray);
+
+        // 5 获取数组长度
+        // alert(aArray.length);
+
+        // 6 追加数据
+        // var aArray = [10, 20, 30, 40];
+        // aArray.push("itcast");
+        // console.log(aArray);
+
+        // 7 删除数据(pop不支持根据下标删除)
+        // var aArray = [10, 20, 30, 40];
+        // aArray.pop();
+        // console.log(aArray);
+
+        // 8 删除指定数据
+        var aArray = [10, 20, 30, 40];
+        // 1 删除数据的起始位置
+        // 2 删除数据的个数
+        // 3 删除数据后添加的数据
+        // aArray.splice(1,2);
+        // console.log(aArray);
+
+        aArray.splice(1,2, "itcast","heima");
+        console.log(aArray);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

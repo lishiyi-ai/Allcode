@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // 对象格式的json数据
+        var sJson1 = '{"name":"itcast","age":20}';
+        // 数组格式的json数据
+        var sJson2 = '[{"name":"老王","age":20},{"name":"老李","age":20}]';
+        // 浏览器获取对象格式的josn数据转换成JavaScript对象
+        var oPerson = JSON.parse(sJson1);
+        console.log(oPerson.name);
+        // 浏览器获取数组格式的josn数据转换成数组
+        var aArry = JSON.parse(sJson2);
+        console.log(aArry);
+        // 服务器获取对象格式的josn数据转换成字典, 数组格式的josn数据转换列表.
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
