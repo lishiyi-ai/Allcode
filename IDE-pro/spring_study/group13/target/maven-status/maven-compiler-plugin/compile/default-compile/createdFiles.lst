@@ -1,7 +1,0 @@
-com\Controller\FileController$1.class
-com\exception\MyException.class
-com\Controller\FileController.class
-com\Interceptor\LoginInterceptor.class
-com\utils\JSONFileUtils.class
-com\Pojo\Resource.class
-com\Pojo\User.class
