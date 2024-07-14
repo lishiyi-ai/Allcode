@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./js/jQuery/jquery-1.12.4.min.js"></script>
+
+    <script>
+        $(function(){
+            // 获取标签对象
+            var $mydiv1 = $("#div1");
+            var $mydiv2 = $("#div2");
+
+            // 绑定事件
+            $mydiv1.click(function(){
+                alert("div1 父标签");
+            });
+
+            $mydiv2.click(function(){
+                alert("div2 子标签");
+            });
+        });
+    </script>
+</head>
+<body>
+   <div id="div1" style="width: 100px; height: 100px; background: red;">
+       <div id="div2" style="background: green;">
+           itcast
+       </div>
+   </div>
+</body>
+</html>

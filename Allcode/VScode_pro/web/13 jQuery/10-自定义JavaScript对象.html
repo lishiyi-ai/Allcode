@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 
+        1 使用顶级Object类型创建自定义对象
+        2 使用字面量的方式创建自定义对象
+     -->
+     <script>
+        //  1 使用顶级Object类型创建自定义对象
+        var oPerson = new Object();
+        // 添加属性
+        oPerson.age = 20;
+        oPerson.name = "itcast";
+        // 添加方法
+        oPerson.show = function(){
+            alert("我喜欢学习");
+        };
+        // 调用方法和属性
+        // alert(oPerson.age + oPerson.name);
+        // oPerson.show();
+
+        // 2 使用字面量的方式创建自定义对象
+        var oStudent = {
+            name:"heima",
+            age:20,
+            show:function(){
+                alert("我喜欢学习");
+            }
+        };
+        // 使用方法和属性
+        // alert(oStudent.name + oStudent.age);
+        oStudent.show();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="./js/jQuery/jquery-1.12.4.min.js"></script>
+
+    <script>
+        // 获取标签对象
+        $(function(){
+            var $myp = $("p");
+            alert($myp);
+            // 获取标签内容
+            var $result = $myp.html();
+            alert($result);
+            // 修改标签中的内容
+            // $myp.html("heima");
+            // 追加新的内容
+            $myp.append("heima");
+
+        })
+    </script>
+</head>
+<body>
+    <p>itcast</p>
+</body>
+</html>

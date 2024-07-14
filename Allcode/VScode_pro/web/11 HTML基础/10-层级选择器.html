@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 层级选择器 主要应用在标签嵌套的结构中 -->
+    <!-- 这个层级关系不一定是父子关系，也有可能是祖孙关系 -->
+    <style>
+        div div{
+            color: red
+        }
+
+        div .mydiv{
+            color: blue
+        }
+
+        /* div div p{
+            color: aqua
+        } */
+
+        div p{
+            color: aqua
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <div>itcast</div>
+
+        <div class="mydiv">heima</div>
+
+        <div>
+            <p>传智</p>
+        </div>
+    </div>
+
+    <div>itcast</div>
+
+</body>
+</html>

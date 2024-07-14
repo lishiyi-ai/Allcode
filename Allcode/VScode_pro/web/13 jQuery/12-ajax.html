@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <title>天气查询</title>
+</head>
+<body>
+    <!-- 
+        接口参考网址 http://doc.tianqiapi.com/603579 
+        查询天气网址 'https://www.tianqiapi.com/api/'
+
+        ajax参数说明:
+        url 请求地址
+        type 请求方式，默认是'GET'，常用的还有'POST'
+        dataType 设置返回的数据格式，常用的是'json'格式
+        data 设置发送给服务器的数据，没有参数不需要设置
+        success 设置请求成功后的回调函数
+        error 设置请求失败后的回调函数
+        async 设置是否异步，默认值是'true'，表示异步，一般不用写
+    -->
+    <!-- 页面搭建 -->
+    <h1>天气查询</h1>
+    <h3>请输入要查询的城市:</h3>
+    <input type="text" id="input-text">
+    <input type="button" value="查询" onclick="searchWeather()">
+    <h3>查询结果</h3>
+    <ul>
+        <li>城市:<span id="city"></span></li>
+        <li>天气:<span id="weather"></span></li>
+    </ul>
+    <!-- ajax -->
+    <script src="./js/jQuery/jquery-1.12.4.min.js"></script>
+
+    <script>
+        function searchWeather(){
+            var city = $("#input-text").val();
+
+            $.ajax({
+                // url 请求地址
+                url: 'https://v0.yiketianqi.com/api?unescape=1&version=v91&appid=43656176&appsecret=I42og6Lm&ext=&cityid=&city=',
+                // type 请求方式，默认是'GET'，常用的还有'POST'
+                type:"get",
+                // dataType 设置返回的数据格式，常用的是'json'格式
+                dataType:"json",
+                // data 设置发送给服务器的数据，没有参数不需要设置
+                // city=北京
+                data:"city="+city,
+                // success 设置请求成功后的回调函数
+                // resp服务器返回的数据
+                success:function(resp){
+                    $("#city").text(resp.city);
+                    $("#weather").text(resp.data[0].wea);
+                },
+                // error 设置请求失败后的回调函数
+                error:function(){
+                    alert("网络异常");
+                },
+                // async 设置是否异步，默认值是'true'，表示异步，一般不用写
+                async:true
+            });
+        };
+    </script>
+</body>
+</html>

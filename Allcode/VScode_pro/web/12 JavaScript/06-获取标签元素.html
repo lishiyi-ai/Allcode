@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+        // 定义一个函数 方便随时调用
+        function fnLoad(){
+            // 通过内置方法获取对应的id的标签 如果没有获取成功返回null
+            var oBtn = document.getElementById("btn");
+            alert(oBtn);
+        }
+        
+        // onload事件 : 页面数据加载完毕后触发
+        // window.onload = fnLoad;
+        // 工作的写法
+        // window.onload = function(){
+        //     // 通过内置方法获取对应的id的标签 如果没有获取成功返回null
+        //     var oBtn = document.getElementById("btn");
+        //     alert(oBtn);
+        // }
+
+        // onclick事件 : 点击触发
+
+    </script>
+
+</head>
+<body>
+    <input type="button" value="按钮" id="btn" onclick="fnLoad()">
+</body>
+</html>

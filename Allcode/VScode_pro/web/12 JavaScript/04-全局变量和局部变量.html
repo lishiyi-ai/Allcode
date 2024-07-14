@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+        // 1 局部变量
+        // function fnShow(){
+        //     var iNum = 10;
+        //     alert(iNum);
+        // }
+        // // 调用函数
+        // // fnShow();
+        // alert(iNum);
+
+        // 2 全局变量
+        var iNum = 10;
+
+        function fnShow(){
+            // js中字符串类型可以和数字类型直接进行相加 数字会自动转化成字符串类型
+            alert("全局变量:" + iNum);
+            // ++ 等价于 +=1
+            iNum++;
+        }
+        // 调用函数
+        fnShow();
+        // 调用修改后的全局变量
+        alert(iNum);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

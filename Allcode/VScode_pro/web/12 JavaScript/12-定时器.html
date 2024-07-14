@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+     <script>
+        //  1 定时器
+        //  function fnShow(name){
+        //     alert(name);
+        //     // 消除定时器
+        //     clearTimeout(tId);
+        //  }
+
+        //  var tId = setTimeout(fnShow, 2000, "itcast");
+
+        //  2 重复定时器
+        function fnShow(name){
+            alert(name);
+        }
+
+        // 消除定时器
+        function fnStop(){
+            clearInterval(tId);
+        }
+
+        var tId = setInterval(fnShow, 2000, "itcast");
+     </script>
+</head>
+<body>
+   <input type="button" value="停止" onclick="fnStop()">
+</body>
+</html>

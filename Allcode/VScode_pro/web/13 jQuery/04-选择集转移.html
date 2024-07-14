@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 
+        
+        
+        
+        
+        parent() 表示获取父元素
+        
+        siblings() 表示获取其它同级元素
+        find("选择器名称") 表示获取指定选择器的元素
+     -->
+     <script src="./js/jQuery/jquery-1.12.4.min.js"></script>
+
+     <script>
+         $(function(){
+            //  获取标签对象
+             var $mydiv = $("#div");
+            //  prev() 表示获取上一个同级元素
+            //  $mydiv.prev().css({"color":"red"});
+            //  prevAll() 表示获取上面所有同级元素
+            // $mydiv.prevAll().css({"color":"red"});
+            // next() 表示获取下一个同级元素
+            // $mydiv.next().css({"color":"red"});
+            // nextAll() 表示获取下面所有同级元素
+            // $mydiv.nextAll().css({"color":"red"});
+            // parent() 表示获取父元素
+            // $mydiv.parent().css({"color":"red"});
+            // children() 表示获取所有的子元素
+            // $mydiv.children().css({"color":"red"});
+            // siblings() 表示获取其它同级元素
+            // $mydiv.siblings().css({"color":"red"});
+            // find("选择器名称") 表示获取指定选择器的元素
+            $mydiv.find(".span").css({"color":"red"});
+         })
+     </script>
+</head>
+<body>
+    <h2>这是第一个标签</h2>
+    <p>这是第二个标签</p>
+    <div id="div">这是<span class="span">第三个</span>标签</div>
+    <h2>这是第四个标签</h2>
+    <p>这是第五个标签</p>
+</body>
+</html>
